@@ -6,15 +6,20 @@ public class ex2 {
     public static void main(String[] args) {
 
         Scanner key = new Scanner(System.in);
-        int numUsr =0;
+        int numUsr = 0, numBi=0;
 
         System.out.print("Informe um número interio e positivo");
         numUsr = key.nextInt();
-
-        if (numUsr <= -1) {
-            System.out.print("Número invalido, favor reiniciar o programa e inserir um número válido ");
-            
+        for (int i = 0; i < 1; i++) {
+            if (numUsr <= -1) {
+                System.out.print("Número invalido, favor reiniciar o programa e inserir um número válido ");
+                break; 
+            }
         }
+        while(numUsr>0){
+            numBi+=numUsr%2;
+        }
+        System.out.println(numBi);
 
     }
 }
