@@ -11,7 +11,7 @@ public class ex1 {
         System.out.print("Informe a quantidade de supermercados a serem pesquisados: ");
         qtdmkt = key.nextInt();
 
-        System.out.println("Informe a quantidade de produtos a serem consultados em cada supermercado: ");
+        System.out.println("Informe a quantidade de produtos a serem pesquisados em cada supermercado: ");
         qtdproduto = key.nextInt();
 
         for (int i = 0; i < qtdproduto; i++) {
