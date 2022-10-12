@@ -10,31 +10,27 @@ public class ex3 {
         System.out.print("Informe a quantidade de triângulos: ");
         qtdTri = key.nextInt();
 
-        int ladoTri[][] = new int[3][qtdTri];
+        int ladoTri[][] = new int[qtdTri][3];
 
-        for (int j = 0; j < qtdTri; j++) {
-            for (int i = 0; i < ladoTri.length; i++) {
+        for (int i = 0; i < qtdTri; i++) {
+            for (int j = 0; j < ladoTri.length; j++) {
                 System.out.print("Informe o valor de cada lado do triangulo " + (j + 1) + ": ");
                 ladoTri[i][j] = key.nextInt();
-                if (ladoTri[i][j] + ladoTri[i][j+1] > ladoTri[i][j]) {
-                    System.out.print("Valores invalidos");
-                    break;
+                if (ladoTri[i][j] < ladoTri[i][j+1] + ladoTri[i][j+2] && ladoTri[i][j+1] < ladoTri[i][j] + ladoTri[i][j+2] && ladoTri[i][j+2] < ladoTri[i][j] + ladoTri[i][j+1]) {
+                    if (ladoTri[i][j] == ladoTri[i][j + 1] && ladoTri[i][j+1] == ladoTri[i][j + 2]) {
+                        System.out.println("O triangulo " + (i + 1) + " é equilátero");
+                    }if (ladoTri[i][j] == ladoTri[i][j+1] || ladoTri[i][j] == ladoTri[i][j+2] || ladoTri[i][j+1] == ladoTri[i][j+2]) {
+                        System.out.println("O triangulo " + (i + 1) + "  é isósceles");
+                    }else{ System.out.println("O triangulo " + (i + 1) + " é escaleno");}
+                    
                 }
             }
         }
         
-      for (int i = 0; i < qtdTri; i++) {
-            for (int j = 0; j < ladoTri.length; j++) {
-                if (ladoTri[i][j] == ladoTri[i][j + 1] && ladoTri[i][j] == ladoTri[i][j + 1]) {
-                    System.out.println("O triangulo " + (i + 1) + " é equilátero");
-                }
-                if (ladoTri[i][j] == ladoTri[i][j + 1] && ladoTri[i][j] != ladoTri[i][j + 1]) {
-                    System.out.println("O triangulo " + (i + 1) + "  é isósceles");
-                }
-                if (ladoTri[i][j] != ladoTri[i][j + 1] && ladoTri[i][j] != ladoTri[i][j + 1]) {
-                    System.out.println("O triangulo " + (i + 1) + " é escaleno");
-                }
-            }
+    //   for (int i = 0; i < qtdTri; i++) {
+    //         for (int j = 0; j < ladoTri.length; j++) {
+    //             }
+    //         }
         }
     }
-}
+
