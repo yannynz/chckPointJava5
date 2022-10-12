@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ex1",
+            "request": "launch",
+            "mainClass": "chckPointJava.ex1.ex1",
+            "projectName": "chckPointJava5_537e8aec"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"

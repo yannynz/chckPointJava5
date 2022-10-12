@@ -15,8 +15,8 @@ public class ex2 {
         } else {
             aux=numUsr;
             while (aux > 0) {
-                finalNum = aux%2+finalNum;
-               aux/=2;
+            finalNum = aux%2+finalNum;
+            aux/=2;
             }
             System.out.print(finalNum);
         }
