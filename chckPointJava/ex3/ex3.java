@@ -13,7 +13,7 @@ public class ex3 {
             System.out.println("Triângulo " + (i + 1));
             System.out.print("Informe o valor do lado 1: ");
             ladoTri = key.nextInt();
-            System.out.print("Informe o valor do lado 2:");
+            System.out.print("Informe o valor do lado 2: ");
             ladoTri1 = key.nextInt();
             System.out.print("Informe o valor do lado 3: ");
             ladoTri2 = key.nextInt();
